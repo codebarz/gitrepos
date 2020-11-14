@@ -1,0 +1,266 @@
+@import './variables.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.flex-col-btw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.d-none-mobile {
+  display: block !important;
+}
+
+.d-none-desktop {
+  display: none !important;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.main-header {
+  width: 100%;
+  background-color: var(--header-color);
+}
+
+.main-header .wrapper {
+  padding: 16px;
+}
+
+.m-r-16 {
+  margin-right: 0;
+}
+
+.main-header a {
+  color: #ffffff;
+}
+.main-header a svg {
+  fill: #ffffff;
+}
+
+.main-header a.notification {
+  position: relative;
+}
+
+.main-header .sub-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .sub-nav a.notification span.notify {
+  position: absolute;
+  top: -6px;
+  left: 6px;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(#54a3ff, #006eed);
+  background-clip: padding-box;
+  border: 2px solid var(--header-color);
+  border-radius: 50%;
+}
+
+.main-header .sub-nav a {
+  margin-right: 15px;
+}
+
+.main-header .sub-nav a.cta-menus {
+  position: relative;
+}
+
+.main-header .sub-nav a.cta-menus::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  content: '';
+  position: absolute;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-right: 4px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 4px solid transparent;
+  top: 30%;
+  left: 20px;
+}
+.with-drop {
+  margin-right: 25px !important;
+}
+
+.main-header .sub-nav a.cta-menus img {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.main-header .main-nav {
+  flex: auto;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 59px;
+  background: var(--header-color);
+  left: 0;
+  width: 100%;
+}
+
+.main-header .main-nav .search-bar {
+  width: 100%;
+}
+
+.main-header .main-nav .search-bar form {
+  padding: 16px;
+}
+
+.main-header .main-nav .search-bar label {
+  display: flex;
+  align-items: center;
+  background: var(--header-color);
+  border: 1px solid var(--header-borders-color);
+  border-radius: 6px;
+}
+
+.main-header .main-nav .search-bar label input {
+  min-height: 28px;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.main-header .main-nav .search-bar label input::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* Internet Explorer 10-11 */
+.main-header .main-nav .search-bar label input:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* Microsoft Edge */
+.main-header .main-nav .search-bar label input::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.main-header .main-nav .search-bar label img {
+  margin-right: 8px;
+}
+
+.main-header .main-nav nav {
+  margin-right: 0;
+  width: 100%;
+}
+
+.main-header .main-nav nav ul {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  flex-direction: column;
+  padding: 0 16px 16px 16px;
+}
+
+.main-header .main-nav nav ul li {
+  display: block;
+  padding: 8px 0;
+  border-top: 1px solid var(--nav-items-border-color);
+}
+
+.main-header .main-nav nav ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .main-nav nav ul li a:hover {
+  opacity: 0.7;
+}
+
+.main-header .main-nav nav ul li a img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .d-none-mobile {
+    display: none !important;
+  }
+
+  .d-none-desktop {
+    display: block !important;
+  }
+
+  .m-r-16 {
+    margin-right: 16px;
+  }
+
+  .main-header .wrapper {
+    width: auto;
+    padding: 16px 32px;
+  }
+  .main-header a.menu-toggle {
+    margin-right: 16px;
+  }
+  .main-header .main-nav .search-bar {
+    max-width: 272px;
+  }
+  .main-header .main-nav {
+    position: relative;
+    flex-direction: row;
+    top: 0;
+  }
+  .main-header .main-nav .search-bar {
+    flex: auto;
+  }
+
+  .main-header .main-nav .search-bar form {
+    padding: 0;
+  }
+
+  .main-header .main-nav nav {
+    margin-right: auto;
+  }
+
+  .main-header .main-nav .search-bar,
+  .main-header .main-nav nav {
+    padding: 0;
+  }
+  .main-header .main-nav nav ul {
+    flex-direction: row;
+    padding: 0;
+  }
+  .main-header .main-nav nav ul li {
+    border-top: none;
+  }
+}
