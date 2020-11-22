@@ -22,7 +22,7 @@
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'Bearer b8fb79265873391d01538a3be6470d194aade609',
+      Authorization: '',
     },
     body: JSON.stringify({
       query: `{
