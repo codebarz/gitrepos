@@ -2,4 +2,16 @@
   --header-color: #24292e;
   --header-borders-color: #444d56;
   --nav-items-border-color: #ffffff26;
+  --bg-primary: #e1e4e8;
+  --text-primary: #24292e;
+  --text-secondary: #586069;
+  --btn-border: #1b1f2326;
+  --btn-bg: #fafbfc;
+  --btn-bg-secondary: #2ea44f;
+  --active-anv-color: #f9826c;
+  --light-grey: #d1d5da;
+  --link-color: #0366d6;
+  --nav-icons-color: #959da5;
+  --nav-item-not-color: #d1d5da80;
+  --link-color: #0366d6;
 }
