@@ -331,7 +331,6 @@
               timeDifference / minute / 60,
             )} hours ago`;
           }
-
           return `Updated ${Math.floor(timeDifference / minute)} minutes ago`;
 
         default:
